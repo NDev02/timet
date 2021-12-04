@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3em;
+    padding: 1em;
+    gap: 2em;
+}
+
+form button {
+    width: 3em;
+    height: 3em;
+    align-self: center;
+}
+
+input {
+    height: 2em;
+    margin: 0.5em;
+}
+
+.row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.col {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: calc(100% - 2em);
+    padding: 1em;
+}
+
+.t {
+    border: 2px solid black;
+    overflow: auto;
+    position: relative;
+}
+
+.tr {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    text-align: center;
+    padding: 1em;
+}
+
+.tr:nth-child(2n + 1) {
+    background: #eee;
+}
+
+.tr:first-of-type {
+    font-weight: bold;
+    background: #bbb;
+    position: sticky;
+    top: 0;
+}
+
+
+.cell {
+
+}

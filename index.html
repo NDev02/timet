@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <div class="row">
+                    <label>Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="row">
+                    <label>Position</label>
+                    <input type="text" id="position">
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <label>Start</label>
+                    <input type="time" id="start">
+                </div>
+                <div class="row">
+                    <label>End</label>
+                    <input type="time" id="end">
+                </div>
+            </div>
+            <button onclick="addTeamMember()">ADD</button>
+        </form>
+        <div class="t" id="schedule">
+        </div>
+    </div>
+</body>
+</html>
