@@ -1,5 +1,12 @@
 let grid = [];
 
+window.addEventListener("hashchange", () => {
+    if(location.hash == "#print") {
+        printDiv("schedule", "Schedule");
+        location.hash = "";
+    }
+});
+
 class TeamMember {
     constructor(name, position, start, end) {
         this.name = name;
